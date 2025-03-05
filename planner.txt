@@ -1,0 +1,9 @@
+ui layout:
+
+-board section
+    - requested section (list of tasks to do)
+    - in progress section (subset of tasks that are from the requested section)
+    - done section (subset of tasks from the in progress section that have been completed).
+
+
+
