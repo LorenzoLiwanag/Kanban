@@ -50,12 +50,21 @@ toDoAddBtn.addEventListener("click", () => {
         markCompletedBtn.addEventListener("click", () => {
             const completedListItem = document.createElement("li");
             const completedListText = document.createElement("span");
+            const completedListBtnDelete = document.createElement("button");
+
 
             completedListItem.appendChild(completedListText);
             completedListText.textContent = item;
+            completedListItem.appendChild(completedListBtnDelete);
+            completedListBtnDelete.textContent = "Remove"
 
             completedList.appendChild(completedListItem);
             inProgressList.removeChild(inProgressListItem);
+
+            completedListBtnDelete.addEventListener("click", () => {
+                completedList.removeChild(completedListItem);
+                inProgressList.appendChild(inProgressListItem);
+            })
 
         })
 

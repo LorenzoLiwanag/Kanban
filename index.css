@@ -1,0 +1,23 @@
+li {
+    list-style: none;
+}
+
+
+#main-board-container {
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: flex-start;
+    /* margin:auto; */
+    width:75%;
+}
+
+.board-container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
