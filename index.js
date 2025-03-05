@@ -39,10 +39,12 @@ toDoAddBtn.addEventListener("click", () => {
         inProgressListBtnDelete.textContent = "Remove";
 
         inProgressList.appendChild(inProgressListItem);
+        toDoList.removeChild(listItem);
 
 
         inProgressListBtnDelete.addEventListener("click", () => {
             inProgressList.removeChild(inProgressListItem);
+            toDoList.appendChild(listItem);
         })
 
         markCompletedBtn.addEventListener("click", () => {
@@ -53,6 +55,7 @@ toDoAddBtn.addEventListener("click", () => {
             completedListText.textContent = item;
 
             completedList.appendChild(completedListItem);
+            inProgressList.removeChild(inProgressListItem);
 
         })
 

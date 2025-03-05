@@ -7,3 +7,9 @@ ui layout:
 
 
 
+
+
+tasks:
+
+when you add a to do task to the in progress list, it should remove from toDo but add to in progress
+if you remove from in progress, it should remove from in progress and transfer back to toDo
